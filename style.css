@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+
+.container {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    'l r'
+    'f f';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr 1fr;
+}
+
+.nav-left {
+  background-color: red;
+  grid-area: l;
+}
+
+.nav-right {
+  background-color: green;
+  grid-area: r;
+}
+
+.footer {
+  background-color: blue;
+  grid-area: f;
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+    grid-template-areas: 'l' 'r' 'f';
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-left {
+    display: none;
+  }
+
+  .container {
+    grid-template-areas: 'l' 'f';
+  }
+}
