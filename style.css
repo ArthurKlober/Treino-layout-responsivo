@@ -265,3 +265,9 @@ body {
     max-height: max-content;
   }
 }
+
+@media only screen and (max-width: 325px) {
+  .box-footer {
+    padding: 10px 10px;
+  }
+}
