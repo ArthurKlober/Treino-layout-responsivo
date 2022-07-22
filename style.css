@@ -16,6 +16,7 @@ body {
   background-color: #fafafa;
   width: 100vw;
   height: 100vh;
+  margin-top: 20px;
 
   display: grid;
   grid-template-areas:
