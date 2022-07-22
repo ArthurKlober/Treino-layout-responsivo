@@ -262,7 +262,6 @@ body {
   .footer {
     justify-self: center;
     max-width: 480px;
-    max-height: max-content;
   }
 }
 
